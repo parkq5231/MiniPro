@@ -15,7 +15,7 @@ public class CursorType implements Service {
 		
 		MemberDAO dao = new MemberDAO();
 		EmployeeVo resultVo = dao.getSalaryInfo(101, 15000);
-		request.setAttribute("vo", resultVo);
+		request.setAttribute("resultVo", resultVo);
 		return "views/main/main.jsp";
 	}
 

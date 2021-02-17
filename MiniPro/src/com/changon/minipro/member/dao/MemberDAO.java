@@ -210,7 +210,7 @@ public class MemberDAO extends DAO implements Dbinterface<MemberVO> {
 				resultVo.setEmail(rs.getString("email"));
 				resultVo.setEmployeeId(rs.getInt("employee_id"));
 				resultVo.setFirstName(rs.getString("first_name"));
-				resultVo.setFirstName(rs.getString("last_name"));
+				resultVo.setLastName(rs.getString("last_name"));
 				resultVo.setHireDate(rs.getString("hire_date"));
 				resultVo.setSalary(rs.getInt("salary"));
 				
