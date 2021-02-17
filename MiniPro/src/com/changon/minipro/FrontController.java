@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.changon.minipro.common.PagingTest;
 import com.changon.minipro.common.Service;
 import com.changon.minipro.member.service.CursorType;
 import com.changon.minipro.member.service.Login;
@@ -39,7 +40,9 @@ public class FrontController extends HttpServlet {
 		map.put("/idCheck.do", new MemberIdCheck()); // id 중복체크
 		// map.put("/memberJoin.do", new MemberJoin());
 
-		map.put("/cursor.do", new CursorType());
+		map.put("/cursor.do", new CursorType());//procedure
+		map.put("/paging.do", new PagingTest());//paging
+		
 	}
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)

@@ -8,14 +8,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
 <style>
-
 #topMenu {
 	height: 30px;
 	width: 820px;
 }
-
 #topMenu ul li {
 	list-style: none;
 	color: white;
@@ -25,7 +22,6 @@
 	vertical-align: middle;
 	text-align: center;
 }
-
 #topMenu .menuLink {
 	text-decoration: none;
 	color: white;
@@ -35,13 +31,11 @@
 	font-weight: bold;
 	font-family: "Trebuchet MS";
 }
-
 #topMenu .menuLink:hover {
 	color: red;
 	background-color: #4d4d4d;
 }
 </style>
-
 </head>
 <body>
 	<div align="center">
