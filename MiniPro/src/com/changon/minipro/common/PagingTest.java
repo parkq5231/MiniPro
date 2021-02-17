@@ -12,8 +12,9 @@ public class PagingTest implements Service {
 	@Override
 	public String run(HttpServletRequest request, HttpServletResponse response) {
 		MemberDAO dao = new MemberDAO();
-		
+
 		String pageNo = request.getParameter("pageNo");
+		pageNo = (pageNo == null) ? "1" : pageNo;
 		int pg = Integer.parseInt(pageNo);
 		Paging paging = new Paging();
 
@@ -22,7 +23,7 @@ public class PagingTest implements Service {
 		paging.setTotalCount(dao.getTotalCnt());
 		System.out.println(paging);
 
-		dao = new MemberDAO();//reason: close();
+		dao = new MemberDAO();// reason: close();
 		List<EmployeeVo> list = dao.getPagingList(pg);
 		request.setAttribute("list", list);
 		request.setAttribute("params", paging);
