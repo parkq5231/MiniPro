@@ -7,6 +7,9 @@
 <meta charset="UTF-8">
 <title>홈</title>
 <style>
+.center {
+text-align: center;
+}
 .pagination {
   display: inline-block;
 }
